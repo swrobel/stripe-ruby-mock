@@ -753,6 +753,8 @@ module StripeMock
       id = params[:id] || 'po_test_payout'
       {
         :amount => 100,
+        :balance_transaction => "txn_2dyYXXP90MN26R",
+        :destination => "acct_164wxjKbnvuxQXGu",
         :id => id,
         :livemode => false,
         :metadata => {},
@@ -760,6 +762,7 @@ module StripeMock
         :object => "payout",
         :date => 1304114826,
         :description => "Payout description",
+        :status => "pending",
       }.merge(params)
     end
 
